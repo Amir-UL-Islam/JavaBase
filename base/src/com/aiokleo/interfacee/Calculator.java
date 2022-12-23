@@ -3,10 +3,14 @@ package com.aiokleo.interfacee;
 import java.text.NumberFormat;
 import java.util.Scanner;
 
+// default public, static and final
+
 //Like abstract classes, interfaces cannot be used to create objects
 
 //Interface methods are by default abstract and public
-//Interface attributes are by default public, static and final
+// 1. An abstract method has [No Body]. (It has no statements.)
+// 2. It declares an access modifier, return type, and method signature followed by a semicolon.
+
 
 
 //Why And When To Use Interfaces?

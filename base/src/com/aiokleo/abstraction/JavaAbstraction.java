@@ -13,9 +13,14 @@ public static void main(String[] args) {
 //    AbstractDot Dog = new AbstractDot(); // I can Instantiate the AbstractDot Class When it is Not ABSTRACT
                                         // After making it Abstract it Throws Errors When We Try to Instantiate
                                        // java: com.aiokleo.AbstractDot is abstract; cannot be instantiated
-    Animals Dog = new AbstractDog();
-    Dog.makeNoise();
+//    Animals Dog = new AbstractDog();  Using Polymorphism
+    // As AbstractDog class is Extended by Animals Abstract Class
+    // So AbstractDog can be Assigned to Animals Abstract class Reference
+    // That is why it worked.
+    AbstractDog Dog = new AbstractDog();
+    Dog.abstractMethod();
     Dog.EveryThing();
+    Dog.nonAbstractMethod();
 
 }
 

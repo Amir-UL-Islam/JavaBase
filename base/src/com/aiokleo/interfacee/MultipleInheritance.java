@@ -9,9 +9,11 @@ interface SecondInterface {
 }
 
 class DemoClass implements FirstInterface, SecondInterface { // Multiple Inheritance
+    @Override
     public void myMethod() {
         System.out.println("Some text.. Inherit FROM Interface ONE");
     }
+    @Override
     public void myOtherMethod() {
         System.out.println("Some other text... Inherit FROM Interface TWO");
     }
