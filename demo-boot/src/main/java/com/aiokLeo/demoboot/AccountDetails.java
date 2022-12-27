@@ -1,9 +1,14 @@
 package com.aiokLeo.demoboot;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
-
-@Component // Component Scanning is available in Base Package FROM com.aiokLeo.demoboot > subPackage > ... if any
+@Getter
+@Setter
+@AllArgsConstructor
+@Component
 
 //If we DON'T ADD ComponentScan Again The org.aiokLeo.Address will NOT be Included
 @ComponentScan(basePackages = {"com.aiokLoe.demoboot", "org.aiokLeo.Address"})
@@ -12,35 +17,12 @@ public class AccountDetails {
 	private String name;
 	private String address;
 	
-//	To Generate Constructors go to Source
-
-	public String getAccountId() {
-		return accountId;
-	}
-	public void setAccountId(String accountId) {
-		this.accountId = accountId;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getAddress() {
-		return address;
-	}
-	public void setAddress(String address) {
-		this.address = address;
-	}
-
-	public void DisplayDetails() {
-		System.out.println("AccountId:" + accountId + " Name: " +  name + " Address: " + address);
-	}
-
-
-
 	//	AccountDetails Constructor For Verifying the Location of the FILE
-	public  AccountDetails(){
+	public AccountDetails(){
 		System.out.println("AccountDetails is Rolling");
+	}
+
+	public void show(){
+		System.out.println("AccountDetails.java File responding.");
 	}
 }
