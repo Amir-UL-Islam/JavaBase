@@ -1,5 +1,8 @@
 package com.aiokleo.abstraction;
 
+import com.aiokleo.interfacee.customInterface.Stater;
+
+@Stater
 public abstract class Animals implements Human{
     public String IHate = "Cats";
     public String ILove = "Dogs";
@@ -8,6 +11,7 @@ public abstract class Animals implements Human{
                                 /// Then MAKE the method ABSTRACT and NOT Define the body.
 
     // Abstract Class can Hold both Abstract and Non-Abstract Method -> Have body and definition LIKE Below
+//    @Stater
     public void nonAbstractMethod() {
         System.out.println("Non-Abstract Method -> Have body and definition LIKE Below");
     }

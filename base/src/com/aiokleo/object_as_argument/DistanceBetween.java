@@ -1,8 +1,19 @@
 package com.aiokleo.object_as_argument;
 
-public class Point {
-    private final int x;
-    private final int y;
+public class DistanceBetween{
+    public static void main(String[] args) {
+        Point p1 = new Point(2, 3);
+        Point p2 = new Point(4, 5);
+
+        double distance = p1.Distance(p2);
+        System.out.println(distance);
+
+    }
+
+}
+class Point {
+    private int x;
+    private int y;
 
     public Point(int x, int y) {
         this.x = x;
