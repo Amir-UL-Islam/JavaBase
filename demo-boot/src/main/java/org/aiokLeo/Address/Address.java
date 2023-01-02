@@ -1,10 +1,19 @@
 package org.aiokLeo.Address;
 
+import lombok.*;
 import org.springframework.stereotype.Component;
 
 @Component
+@Getter
+@Setter
+@AllArgsConstructor
+@ToString
+@NoArgsConstructor
 public class Address {
-    public Address() {
-        System.out.println("\n"+"Address is Rolling");
+    private int id;
+    private String address;
+    public void Compile(){
+        System.out.println("Address is Rolling!");
     }
+
 }

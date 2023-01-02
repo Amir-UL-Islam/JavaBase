@@ -1,6 +1,7 @@
 package com.aiokleo.abstraction;
 
-import com.aiokleo.interfacee.customInterface.Stater;
+import com.aiokleo.annotation.custom_annotation.RunImmediately;
+import com.aiokleo.annotation.custom_annotation.Stater;
 
 @Stater
 public abstract class Animals implements Human{
@@ -13,7 +14,12 @@ public abstract class Animals implements Human{
     // Abstract Class can Hold both Abstract and Non-Abstract Method -> Have body and definition LIKE Below
 //    @Stater
     public void nonAbstractMethod() {
-        System.out.println("Non-Abstract Method -> Have body and definition LIKE Below");
+        System.out.println("Non-Abstract Method -> Have body and definition LIKE This One");
+    }
+    @RunImmediately(runTimes = 3)
+    public void nonAbstractMethodAnnotated(){
+        System.out.println("RUN Immediately");
+
     }
     public abstract void abstractMethod();
 }

@@ -1,2 +1,4 @@
-package com.aiokleo.annotation.custom_annotation;public class AnnotationInTypes {
+package com.aiokleo.annotation.custom_annotation;
+
+public class AnnotationInTypes {
 }

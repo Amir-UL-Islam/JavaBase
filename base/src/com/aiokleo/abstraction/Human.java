@@ -1,6 +1,6 @@
 package com.aiokleo.abstraction;
 
-import com.aiokleo.interfacee.customInterface.Stater;
+import com.aiokleo.annotation.custom_annotation.Stater;
 
 interface Human {
     @Stater

@@ -32,13 +32,11 @@ public class JDBC {
         String query = "select * from stackexchange ;";
         //
 
-
         // Processing the result
-
         ResultSet rs = st.executeQuery(query); // Storing data into rs.
 //        rs.next(); // Shifting the pointer
         while (rs.next()) { // also work as scan.hasNext() method
-            String data = rs.getString("question") + " " + rs.getString("tag") + " " + rs.getDate("date");
+            String data = rs.getString("question") + " " + rs.getString("tag") + " " + rs.getDate("date") ;
             System.out.println(data);
         }
 

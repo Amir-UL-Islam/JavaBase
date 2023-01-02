@@ -1,4 +1,4 @@
-package com.aiokleo.interfacee.customInterface;
+package com.aiokleo.annotation.custom_annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Target;
