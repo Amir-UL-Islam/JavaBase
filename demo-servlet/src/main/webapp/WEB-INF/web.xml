@@ -14,5 +14,5 @@
         <url-pattern>/MathO</url-pattern>
     </servlet-mapping>
 
-    
+
 </web-app>
