@@ -4,6 +4,7 @@
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
          version="5.0">
 <!--    When ever a User calls for MathO  for Every servlet-->
+    <!--    Which is called by form Action-->
     <servlet>
         <servlet-name>MathO</servlet-name>
         <servlet-class>com.example.demoservlet.MathO</servlet-class>
@@ -15,4 +16,14 @@
     </servlet-mapping>
 
 
+<!--    Which is called by MathO, another Servlet-->
+    <servlet>
+        <servlet-name>Square</servlet-name>
+        <servlet-class>com.example.demoservlet.Square</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Square</servlet-name>
+        <url-pattern>/Square</url-pattern>
+    </servlet-mapping>servlet-mapping
 </web-app>

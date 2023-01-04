@@ -1,5 +1,7 @@
 package com.example.demoservlet;
 
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -14,7 +16,7 @@ public class MathO extends HttpServlet {
 //    public void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
     // Only for Post Request
-    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         // catching the Request from the Client
         // Getting the Query String from the Request
         int i = Integer.parseInt(request.getParameter("N1"));
@@ -26,7 +28,15 @@ public class MathO extends HttpServlet {
         // You have to set the Flow in web.xml file
 
         // Printing data Server to Client
-        PrintWriter out = response.getWriter();
-        out.println("Result is " + k);
+//        PrintWriter out = response.getWriter();
+//        out.println("Result is " + k);
+
+        // Setting the Attribute as key and value
+        request.setAttribute("keyOfSum", k);
+
+        // RequestDispatcher is used to send the Request to another Servlet
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("Square"); // Here Square is the Servlet Name in web.xml file.
+        requestDispatcher.forward(request, response);
+
     }
 }
