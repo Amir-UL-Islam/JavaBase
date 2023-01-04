@@ -8,10 +8,10 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 public class Square extends HttpServlet {
-    public void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         // Getting the Attribute from the Request
-        int kSquare = (int) request.getAttribute("keyOfSum");
+        int kSquare = Integer.parseInt(request.getParameter("k"));
         kSquare = kSquare * kSquare;
 
         // Printing data Server to Client

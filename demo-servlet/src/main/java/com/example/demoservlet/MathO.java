@@ -31,12 +31,8 @@ public class MathO extends HttpServlet {
 //        PrintWriter out = response.getWriter();
 //        out.println("Result is " + k);
 
-        // Setting the Attribute as key and value
-        request.setAttribute("keyOfSum", k);
-
-        // RequestDispatcher is used to send the Request to another Servlet
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("Square"); // Here Square is the Servlet Name in web.xml file.
-        requestDispatcher.forward(request, response);
+        // Sending Response to another Servlet as requestParameter
+        response.sendRedirect("Square?k=" + k); // Redirecting to Square Servlet
 
     }
 }
