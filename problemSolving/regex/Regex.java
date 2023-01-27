@@ -12,7 +12,7 @@ public class Regex {
             String input = sc.nextLine();
 
             System.out.println(input.matches(new MyRegex().Pattern));    
-            //sc.close();  
+            sc.close();  
         }
     }
 }
