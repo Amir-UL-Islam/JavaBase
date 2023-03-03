@@ -1,3 +1,4 @@
+// Sum of the values in the tree’s leaves only.
 class SumInLeavesVisitor extends TreeVis {
     private int result = 0;
 
@@ -9,12 +10,15 @@ class SumInLeavesVisitor extends TreeVis {
         // do nothing
     }
 
+// Sum of the values in the tree’s leaves only.
     public void visitLeaf(TreeLeaf leaf) {
         result += leaf.getValue();
     }
 }
 
+// Product of values stored in all red nodes, including leaves, computed modulo.
 class ProductOfRedNodesVisitor extends TreeVis {
+    // Note that the product of zero values is equal to One .
     private long result = 1;
     private final int M = 1000000007;
 
@@ -35,6 +39,9 @@ class ProductOfRedNodesVisitor extends TreeVis {
     }
 }
 
+// Absolute difference between
+// 1. the sum of values stored in the tree’s non-leaf nodes at even depth
+// 2. And the sum of values stored in the tree’s green leaf nodes.
 class FancyVisitor extends TreeVis {
     private int nonLeafEvenDepthSum = 0;
     private int greenLeavesSum = 0;
@@ -43,12 +50,14 @@ class FancyVisitor extends TreeVis {
         return Math.abs(nonLeafEvenDepthSum - greenLeavesSum);
     }
 
+// 1. the sum of values stored in the tree’s non-leaf nodes at even depth
     public void visitNode(TreeNode node) {
         if (node.getDepth() % 2 == 0) {
             nonLeafEvenDepthSum += node.getValue();
         }
     }
 
+// 2. And the sum of values stored in the tree’s green leaf nodes.
     public void visitLeaf(TreeLeaf leaf) {
         if (leaf.getColor() == Color.GREEN) {
             greenLeavesSum += leaf.getValue();
@@ -56,6 +65,12 @@ class FancyVisitor extends TreeVis {
     }
 }
 
+enum Color {
+    RED,
+    GREEN
+}
+
+// Implement the logic responsible for visiting the tree’s non-leaf nodes such that the getResult method returns the correct  for the implementing class’ visitor.
 class NodeInfo {
     int index;
     int value;
@@ -68,7 +83,6 @@ class NodeInfo {
         this.edges = new HashSet<>();
     }
 }
-
 public class Solution {
 
     private static List<NodeInfo> nodeInfoList;
