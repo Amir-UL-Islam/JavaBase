@@ -1,4 +1,4 @@
-// Binary Tree in Java
+package com.aiokleo.binary_tree;// Binary Tree in Java
 
 // Node creation
 class Node {
