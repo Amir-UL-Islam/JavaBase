@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Getting-Started</name>
+	<name>demo-servlet</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -22,11 +22,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-<<<<<<< HEAD
-			<id>1673579182030</id>
-=======
-			<id>1674712324802</id>
->>>>>>> 28e82c8 ( StreamCollectionMethod)
+			<id>1674712324804</id>
 			<name></name>
 			<type>30</type>
 			<matcher>

@@ -22,7 +22,11 @@
 	</natures>
 	<filteredResources>
 		<filter>
+<<<<<<< HEAD
 			<id>1673579182037</id>
+=======
+			<id>1674712324805</id>
+>>>>>>> 28e82c8 ( StreamCollectionMethod)
 			<name></name>
 			<type>30</type>
 			<matcher>
