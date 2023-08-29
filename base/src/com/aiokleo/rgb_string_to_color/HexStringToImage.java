@@ -1,5 +1,6 @@
 package com.aiokleo.rgb_string_to_color;
 
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -22,10 +23,8 @@ public class HexStringToImage {
         //Next Step
 
 
-
-
         // Calculate the width and height of the image
-        int width = 240; // You can adjust this based on your needs
+        int width = 270; // You can adjust this based on your needs
         int height = imageLines.length() / (width * 2);
 
         // Create a BufferedImage
@@ -39,6 +38,16 @@ public class HexStringToImage {
                 int rgb = (colorValue << 16) | (colorValue << 8) | colorValue;
                 image.setRGB(x, y, rgb);
                 index += 2;
+//                // Extract the next two characters from the hexadecimal string
+//                String hexValue = imageLines.substring(index, index + 2);
+//                index += 2;
+//
+//                // Parse the hexadecimal value to an integer
+//                int intValue = Integer.parseInt(hexValue, 16);
+//
+//                // Set the pixel color based on the parsed value
+//                Color color = new Color(intValue);
+//                image.setRGB(x, y, color.getRGB());
             }
         }
 
