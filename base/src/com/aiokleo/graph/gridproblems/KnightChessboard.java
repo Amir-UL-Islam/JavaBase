@@ -1,4 +1,4 @@
-package com.aiokleo.hashtable;
+package com.aiokleo.graph.gridproblems;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -8,14 +8,6 @@ import java.util.Queue;
 
 public class KnightChessboard {
 
-    static class Cell {
-        int row, col;
-
-        public Cell(int row, int col) {
-            this.row = row;
-            this.col = col;
-        }
-    }
 
     public static int solution(int src, int dest) {
         int[] dr = {-2, -2, -1, -1, 1, 1, 2, 2};
@@ -23,6 +15,16 @@ public class KnightChessboard {
 //        moveOffsets = [(-1,-2),(-1,2),(-2,-1),(-2,1),
 //        ( 1,-2),( 1,2),( 2,-1),( 2,1)]
         int n = 8; // Chessboard size
+
+        class Cell {
+            final int row;
+            final int col;
+
+            public Cell(int row, int col) {
+                this.row = row;
+                this.col = col;
+            }
+        }
 
         // Convert source and destination square numbers to (row, column) coordinates.
         int srcRow = src / n; // 19 / 8 = 2
@@ -69,7 +71,7 @@ public class KnightChessboard {
                 chessboard[i][j] = -1;
             }
         }
-        System.out.println(Arrays.deepToString(chessboard));
+//        System.out.println(Arrays.deepToString(chessboard));
 
         // Initialize the source square to 0 moves.
         chessboard[srcRow][srcCol] = 0;
@@ -86,7 +88,7 @@ public class KnightChessboard {
                 return chessboard[destRow][destCol];
             }
 
-            for (int i = 0; i < 8; i++) {
+            for (int i = 0; i < n; i++) {
                 int newRow = current.row + dr[i];
                 int newCol = current.col + dc[i];
 

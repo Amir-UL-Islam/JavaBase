@@ -12,7 +12,7 @@ public class BreathFirst {
         Graphs graphs = new Graphs();
         BreathFirst.BreathFirstSearch bfs = new BreathFirst.BreathFirstSearch();
         Character source = 'a';
-        Queue<Character> result = bfs.bfs(graphs.DemoGraph(), source);
+        Queue<Character> result = bfs.bfs(graphs.demoGraph(), source);
         System.out.println("result = " + result);
     }
 

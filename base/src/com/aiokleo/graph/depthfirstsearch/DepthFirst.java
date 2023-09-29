@@ -10,7 +10,7 @@ public class DepthFirst {
         Graphs graphs = new Graphs();
         DepthFirstSearch dfs = new DepthFirstSearch();
         Character source = 'a';
-        Stack<Character> result = dfs.dfs(graphs.DemoGraph(), source);
+        Stack<Character> result = dfs.dfs(graphs.demoGraph(), source);
         System.out.println("result = " + result);
     }
 
