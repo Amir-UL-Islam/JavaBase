@@ -9,10 +9,20 @@ import java.util.*;
 public class BreathFirst {
 
     public static void main(String[] args) {
-        Graphs graphs = new Graphs();
+
+        Map<Character, List<Character>> graph = new HashMap<>();
+
+        // Adding nodes and their adjacency lists
+        graph.put('a', Arrays.asList('b', 'c'));
+        graph.put('b', Collections.singletonList('d'));
+        graph.put('c', Collections.singletonList('e'));
+        graph.put('d', Collections.emptyList());
+        graph.put('e', Collections.singletonList('b'));
+        graph.put('f', Collections.singletonList('d'));
+
         BreathFirst.BreathFirstSearch bfs = new BreathFirst.BreathFirstSearch();
         Character source = 'a';
-        Queue<Character> result = bfs.bfs(graphs.demoGraph(), source);
+        Queue<Character> result = bfs.bfs(graph, source);
         System.out.println("result = " + result);
     }
 

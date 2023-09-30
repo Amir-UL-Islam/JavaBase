@@ -7,10 +7,19 @@ import java.util.*;
 public class DepthFirst {
 
     public static void main(String[] args) {
-        Graphs graphs = new Graphs();
+        Map<Character, List<Character>> graph = new HashMap<>();
+
+        // Adding nodes and their adjacency lists
+        graph.put('a', Arrays.asList('b', 'c'));
+        graph.put('b', Collections.singletonList('d'));
+        graph.put('c', Collections.singletonList('e'));
+        graph.put('d', Collections.emptyList());
+        graph.put('e', Collections.singletonList('b'));
+        graph.put('f', Collections.singletonList('d'));
+
         DepthFirstSearch dfs = new DepthFirstSearch();
         Character source = 'a';
-        Stack<Character> result = dfs.dfs(graphs.demoGraph(), source);
+        Stack<Character> result = dfs.dfs(graph, source);
         System.out.println("result = " + result);
     }
 
