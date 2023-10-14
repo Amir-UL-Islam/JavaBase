@@ -5,6 +5,7 @@ import com.aiokleo.graph.Graphs;
 import java.util.*;
 
 public class HasPath {
+    // Depth First Search Approach
     public static Boolean hasPath(Map<Character, List<Character>> graph, Character src, Character dest) {
         if (src == dest) return true;
 
