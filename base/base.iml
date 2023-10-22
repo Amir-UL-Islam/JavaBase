@@ -18,5 +18,14 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="scala-sdk-2.13.10" level="application" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/lombok-1.18.26.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

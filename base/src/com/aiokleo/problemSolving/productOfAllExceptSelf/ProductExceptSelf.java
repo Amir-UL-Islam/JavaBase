@@ -2,7 +2,7 @@ package com.aiokleo.problemSolving.productOfAllExceptSelf;
 
 public class ProductExceptSelf {
     public static void main(String[] args) {
-        int[] nums = {0, 0};
+        int[] nums = {1, 2, 3, 4};
         SolutionTwo solution = new SolutionTwo();
         int[] answer = solution.productExceptSelf(nums);
         for (int j : answer) {
@@ -18,6 +18,10 @@ public class ProductExceptSelf {
             int[] answer = new int[nums.length];
             for (int i = 0; i < nums.length; i++) {
                 for (int j : nums) {
+                    if (j == 0) {
+                        product = 0;
+                        break;
+                    }
                     if (j != nums[i]) {
                         product *= j;
                     }
@@ -34,6 +38,7 @@ public class ProductExceptSelf {
             int prefixProduct = 1;
             int suffixProduct = 1;
             int numsLength = nums.length;
+//            int[] nums = {1, 2, 3, 4};
             int[] result = new int[numsLength];
             for (int i = 0; i < numsLength; i++) {
                 result[i] = prefixProduct;
