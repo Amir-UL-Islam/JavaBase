@@ -1,5 +1,7 @@
 package com.aiokleo.graph.adjacencyconversion;
 
+import com.aiokleo.graph.breathfirstsearch.HasPath;
+
 import java.util.*;
 
 public class ListToMatrix {
@@ -24,8 +26,10 @@ public class ListToMatrix {
             }
         }
 
-        System.out.println(Arrays.deepToString(matrix));
-        System.out.println(toAdjacencyList(matrix));
+        Map<Character, List<Character>> graph = toAdjacencyList(matrix);
+        System.out.println("Matrix \n" + Arrays.deepToString(matrix));
+        System.out.println(graph);
+        System.out.println(HasPath.hasPath(graph, 'f', 'j'));
     }
 
     // For Undirected Graph
