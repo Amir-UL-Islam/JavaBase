@@ -1,4 +1,4 @@
-package com.aiokleo.graph.gridproblems;
+package com.aiokleo.graph.depthfirstsearch;
 
 import com.aiokleo.graph.Graphs;
 
