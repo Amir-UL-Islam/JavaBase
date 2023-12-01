@@ -5,8 +5,7 @@ import java.util.*;
 public class Graphs {
     public static void printGraph(Map<Character, List<Character>> graph) {
 
-        for (
-                Map.Entry<Character, List<Character>> entry : graph.entrySet()) {
+        for (Map.Entry<Character, List<Character>> entry : graph.entrySet()) {
             char node = entry.getKey();
             List<Character> neighbors = entry.getValue();
 
@@ -16,6 +15,7 @@ public class Graphs {
             }
             System.out.println();
         }
+
 
     }
 

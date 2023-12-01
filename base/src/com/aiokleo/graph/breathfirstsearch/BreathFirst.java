@@ -33,7 +33,7 @@ public class BreathFirst {
             queue.add(source);
             System.out.println("queue = " + queue);
 
-            while (queue.size() > 0) {
+            while (!queue.isEmpty()) {
                 // Clearing the stack
                 Character current = queue.poll();
                 System.out.println("current = " + current);
