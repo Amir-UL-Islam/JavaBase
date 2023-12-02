@@ -32,6 +32,8 @@ public class DepthFirst {
                 // Empty the stack
                 Character current = stack.pop();
                 System.out.println("current = " + current);
+
+                // This is part where we can use the magic of Depth First Search
                 for (Character neighbor : graph.get(current)) {
                     stack.push(neighbor);
                 }
