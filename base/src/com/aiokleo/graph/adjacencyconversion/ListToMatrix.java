@@ -1,6 +1,8 @@
 package com.aiokleo.graph.adjacencyconversion;
 
 import com.aiokleo.graph.breathfirstsearch.HasPath;
+import com.aiokleo.graph.breathfirstsearch.IsExistedAPath;
+import com.aiokleo.graph.connectedcomponent.IsConnectedToAPath;
 
 import java.util.*;
 
@@ -30,6 +32,7 @@ public class ListToMatrix {
         System.out.println("Matrix \n" + Arrays.deepToString(matrix));
         System.out.println(graph);
         System.out.println(HasPath.hasPath(graph, 'f', 'j'));
+        System.out.println(IsConnectedToAPath.isConnected(graph, 'f', new HashSet<>()));
     }
 
     // For Undirected Graph

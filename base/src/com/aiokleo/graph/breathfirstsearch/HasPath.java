@@ -5,12 +5,12 @@ import com.aiokleo.graph.Graphs;
 import java.util.*;
 
 public class HasPath {
-    public static Boolean hasPath(Map<Character, List<Character>> graph, Character src, Character dest) {
-        Queue<Character> queue = new LinkedList<>();
-        Set<Character> visited = new HashSet<>();
+    public static <T> Boolean hasPath(Map<T, List<T>> graph, T src, T dest) {
+        Queue<T> queue = new LinkedList<>();
+        Set<T> visited = new HashSet<>();
         queue.add(src);
         while (!queue.isEmpty()) {
-            Character current = queue.poll();
+            T current = queue.poll();
             if (current == dest) return true;
             if (visited.contains(current)) continue; // Not going to add the same node twice
             visited.add(current);

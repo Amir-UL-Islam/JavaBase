@@ -4,7 +4,7 @@ import com.aiokleo.graph.Graphs;
 
 import java.util.*;
 
-class IsConnectedToAPath {
+public class IsConnectedToAPath {
     public static void main(String[] args) {
 
         Set<Integer> visited = new HashSet<>();
@@ -22,7 +22,7 @@ class IsConnectedToAPath {
         graph.put(2, Collections.singletonList(1));
 
         printGraph(graph);
-        if (IsConnectedToAPath.isConnected(graph, 4, visited)) {
+        if (IsConnectedToAPath.isConnected(graph, 3, visited)) {
             System.out.println("Graph is connected");
         } else {
             System.out.println("Graph is not connected");
@@ -45,12 +45,13 @@ class IsConnectedToAPath {
         }
     }
 
-    public static Boolean isConnected(Map<Integer, List<Integer>> graph, Integer node, Set<Integer> visited) {
+    public static <T> Boolean isConnected(Map<T, List<T>> graph, T node, Set<T> visited) {
 
         if (visited.contains(node)) return false;
         visited.add(node);
+        System.out.println("visited = " + visited);
 
-        for (Integer neighbor : graph.get(node)) {
+        for (T neighbor : graph.get(node)) {
             isConnected(graph, neighbor, visited);
         }
         return true;
