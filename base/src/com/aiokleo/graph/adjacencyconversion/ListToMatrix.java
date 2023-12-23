@@ -47,9 +47,9 @@ public class ListToMatrix {
         }
 
         // Populate the adjacency list based on the matrix
-        for (int i = 0; i < matrix.length; i++) {
-            char sourceNode = matrix[i][0];
-            char targetNode = matrix[i][1];
+        for (char[] chars : matrix) {
+            char sourceNode = chars[0];
+            char targetNode = chars[1];
 
             adjacencyList.get(sourceNode).add(targetNode);
             adjacencyList.get(targetNode).add(sourceNode); // if the graph is undirected

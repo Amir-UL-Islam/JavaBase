@@ -18,7 +18,6 @@ public class Graphs {
         }
     }
 
-
     public static int[][] adjacencyMatrix(int numVertices) {
         return new int[numVertices][numVertices];
     }
@@ -27,7 +26,6 @@ public class Graphs {
         adjacencyMatrix[fromVertex][toVertex] = 1;
         adjacencyMatrix[toVertex][fromVertex] = 1; // Indicates a directed edge from 'fromVertex' to 'toVertex'
     }
-
 
     public static void addDirectedEdge(int[][] adjacencyMatrix, int fromVertex, int toVertex) {
         adjacencyMatrix[fromVertex][toVertex] = 1;
@@ -55,6 +53,3 @@ public class Graphs {
 //            graph.printGraph();
 //        }
 }
-
-
-

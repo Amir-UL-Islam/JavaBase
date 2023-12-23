@@ -11,7 +11,7 @@ public class HasPath {
         queue.add(src);
         while (!queue.isEmpty()) {
             T current = queue.poll();
-            if (current == dest) return true;
+            if (current == dest) return true; // I also can print the path here
             if (visited.contains(current)) continue; // Not going to add the same node twice
             visited.add(current);
             queue.addAll(graph.get(current));
