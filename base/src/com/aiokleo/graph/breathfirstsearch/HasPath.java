@@ -7,12 +7,14 @@ import java.util.*;
 public class HasPath {
 
     // Recursive
-    public static <T> Boolean hasPathRecursive(Map<T, List<T>> graph, T src, T dest) {
+    public static <T> Boolean hasPathRecursive(Map<T, List<T>> graph, T src, T dest, Set<T> visited) {
         System.out.println("Source :" + src + " " + "Destination: " + dest);
+        if (visited.contains(src)) return false;// it is visited before there no reason to visit it again
+        visited.add(src);
         if (src == dest) return true; // I also can print the path here
 
         for (T neighbor : graph.get(src)) {
-            if (hasPathRecursive(graph, neighbor, dest)) {
+            if (hasPathRecursive(graph, neighbor, dest, visited)) {
                 return true;
             }
         }
@@ -28,7 +30,7 @@ public class HasPath {
         stack.add(src);
         while (!stack.empty()) {
             T current = stack.pop();
-            if (current == dest) return true; // I also can print the path here
+            if (current == dest) return true; // I also can print the path here, Also if you Never return true, you must return false at the end
             if (visited.contains(current)) continue; // Not going to add the same node twice
             visited.add(current);
             stack.addAll(graph.get(current));

@@ -30,7 +30,8 @@ public class ListToMatrix {
         Map<Character, List<Character>> graph = toAdjacencyList(matrix);
         System.out.println("Matrix \n" + Arrays.deepToString(matrix));
         System.out.println(graph);
-        System.out.println(HasPath.hasPathRecursive(graph, 'f', 'j'));
+        Set<Character> visited = new HashSet<>();
+        System.out.println(HasPath.hasPathRecursive(graph, 'f', 'j', visited));
         System.out.println(IsConnectedToAPath.isConnected(graph, 'f', new HashSet<>()));
     }
 
