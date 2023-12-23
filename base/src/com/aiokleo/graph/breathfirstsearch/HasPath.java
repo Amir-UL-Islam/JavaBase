@@ -5,16 +5,33 @@ import com.aiokleo.graph.Graphs;
 import java.util.*;
 
 public class HasPath {
-    public static <T> Boolean hasPath(Map<T, List<T>> graph, T src, T dest) {
-        Queue<T> queue = new LinkedList<>();
+
+    // Recursive
+    public static <T> Boolean hasPathRecursive(Map<T, List<T>> graph, T src, T dest) {
+        System.out.println("Source :" + src + " " + "Destination: " + dest);
+        if (src == dest) return true; // I also can print the path here
+
+        for (T neighbor : graph.get(src)) {
+            if (hasPathRecursive(graph, neighbor, dest)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    // Depth First Search
+    public static <T> Boolean hasPathDFS(Map<T, List<T>> graph, T src, T dest) {
+        System.out.println("Source :" + src + " " + "Destination: " + dest);
+        if (src == dest) return true;
+        Stack<T> stack = new Stack<>();
         Set<T> visited = new HashSet<>();
-        queue.add(src);
-        while (!queue.isEmpty()) {
-            T current = queue.poll();
+        stack.add(src);
+        while (!stack.empty()) {
+            T current = stack.pop();
             if (current == dest) return true; // I also can print the path here
             if (visited.contains(current)) continue; // Not going to add the same node twice
             visited.add(current);
-            queue.addAll(graph.get(current));
+            stack.addAll(graph.get(current));
         }
         return false;
     }
@@ -30,7 +47,7 @@ public class HasPath {
         graph.put('k', Collections.emptyList());
 
         Graphs.printGraph(graph);
-        System.out.println(hasPath(graph, 'f', 'j'));
+        System.out.println(hasPathDFS(graph, 'f', 'k'));
 
     }
 }
