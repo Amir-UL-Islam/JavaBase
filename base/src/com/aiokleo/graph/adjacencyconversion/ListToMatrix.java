@@ -1,12 +1,13 @@
 package com.aiokleo.graph.adjacencyconversion;
 
 import com.aiokleo.graph.breathfirstsearch.HasPath;
-import com.aiokleo.graph.connectedcomponent.IsConnectedToAPath;
+import com.aiokleo.graph.connectedcomponent.IsConnectedComponentCount;
 
 import java.util.*;
 
 public class ListToMatrix {
     public static void main(String[] args) {
+        List<Object> visitedList = new ArrayList<>();
         System.out.println("Provide The Adjacency List Size as X * Y: ");
 
         System.out.print("X: ");
@@ -32,7 +33,7 @@ public class ListToMatrix {
         System.out.println(graph);
         Set<Character> visited = new HashSet<>();
         System.out.println(HasPath.hasPathRecursive(graph, 'f', 'j', visited));
-        System.out.println(IsConnectedToAPath.isConnected(graph, 'f', new HashSet<>()));
+        System.out.println(IsConnectedComponentCount.connectedComponent(graph, visited, visitedList));
     }
 
     // For Undirected Graph

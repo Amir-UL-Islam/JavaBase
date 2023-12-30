@@ -1,3 +1,5 @@
+package com.aiokleo.PyramidAndPattern;
+
 public class Pyramid {
 	public static void main(String[] agrs){
         int rows = 5;

@@ -16,7 +16,7 @@ public class UseOfVar {
 
 //        Same thing with Var Keyword
         var IWantToDo = List.of("Eat", "Sing", "Work", "Travel");
-        IWantToDo.forEach(iw -> System.out.print(iw));
+        IWantToDo.forEach(System.out::print);
 
 
     }
