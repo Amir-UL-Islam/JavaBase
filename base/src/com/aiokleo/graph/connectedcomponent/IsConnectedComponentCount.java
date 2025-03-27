@@ -54,9 +54,8 @@ public class IsConnectedComponentCount {
 
         var count = 0;
         var largestIsland = 0;
-        // 1. Recursive
         for (T neighbor : graph.keySet()) {
-            if (explore(graph, neighbor, visited, visitedList, largestIsland)) {
+            if (explore(graph, neighbor, visited)) {
                 count++;
             }
         }
@@ -71,7 +70,7 @@ public class IsConnectedComponentCount {
         return count;
     }
 
-    private static <T> boolean explore(Map<T, List<T>> graph, T neighbor, Set<T> visited, List<Object> visitedList, int largestIsland) {
+    private static <T> boolean exploreRecurse(Map<T, List<T>> graph, T neighbor, Set<T> visited, List<Object> visitedList, int largestIsland) {
         if (visited.contains(neighbor)) {
             visitedList.add(neighbor + "*");
             return false;
@@ -82,7 +81,7 @@ public class IsConnectedComponentCount {
         System.out.println("visitedList = " + visitedList);
 
         for (T next : graph.get(neighbor)) {
-            explore(graph, next, visited, visitedList, largestIsland);
+            exploreRecurse(graph, next, visited, visitedList, largestIsland);
         }
         return true;
     }
@@ -92,11 +91,23 @@ public class IsConnectedComponentCount {
         stack.add(neighbor);
         while (!stack.empty()) {
             T current = stack.pop();
-            if (visited.contains(current)) continue; // Not going to add the same node twice
+            if (visited.contains(current)) return false; // Not going to add the same node twice
             visited.add(current);
             stack.addAll(graph.get(current));
         }
         return true;
+    }
+
+    // Recursive Solution for Connected Component, Number of Islands, Longest Island
+    private static <T> boolean exploreRecurse2(Map<T, List<T>> graph, T neighbor, Set<T> visited) {
+        if (visited.contains(neighbor)) return false;
+        visited.add(neighbor);
+        for (T newNeighbor : graph.get(neighbor)) {
+            exploreRecurse2(graph, newNeighbor, visited);
+        }
+        return true; // This will return true if for loop ends for particular node and So, will be considered as a new connected component
+        // the number of islands will be the number of times this method returns true
+        // and also the longest island will be the largestIsland
     }
 
 

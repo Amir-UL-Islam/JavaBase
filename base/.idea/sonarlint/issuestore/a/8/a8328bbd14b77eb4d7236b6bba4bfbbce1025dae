@@ -1,0 +1,8 @@
+
+	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†ήθωÿÿÿÿ8Έθσμ1J$fa303f0a-4862-4aff-8424-b32c4a48c855
+_
+java:S1643"Use a StringBuilder instead.(ΈΫ®τ8»θσμ1J$2ba34e6b-0f6c-469a-bacf-feb4d06d029c
+	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(–ª¬Ψ8Ϋ„σμ1J$454e149f-1f2e-4be3-9d01-33a376f96b89
+~	java:S125"<This block of commented-out lines of code should be removed.(ξγ”8ΚΖσμ1J$93b27b8f-a6bf-429f-bd75-bb72dc817f70
+„
+java:S1126"AReplace this if-then-else statement by a single return statement.(ζΝ 8ισμ1J$7cc588f4-491b-49d8-a76c-42f5be78a7c1

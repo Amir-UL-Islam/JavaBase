@@ -1,0 +1,29 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(„é‰Šÿÿÿÿÿ8¿‚Ëòì1
+_
+java:S1659"#Declare "right" on a separate line.(çùà¶J$1c0fdb4d-6cec-4006-8ffb-89e98c821104
+e	java:S106"+Replace this use of System.out by a logger.(­Ìß)J$ddea25ad-caa8-45be-93be-c10cd377db87
+e	java:S106"+Replace this use of System.out by a logger.(¿ÓŒuJ$597afa42-cacb-4a4d-b1ef-c951a9522e77
+k	java:S106%"+Replace this use of System.out by a logger.(Ğ—ŠÿÿÿÿÿJ$d7e84338-d5ab-4054-a324-54cc8ec3df32
+k	java:S106,"+Replace this use of System.out by a logger.(Ğ—ŠÿÿÿÿÿJ$ae0ea9a2-ba94-4bbd-8b61-d94b556cee64
+k	java:S1066"+Replace this use of System.out by a logger.(Ğ—ŠÿÿÿÿÿJ$1e10bb40-625c-4471-ab65-de3715dc996f
+k
+java:S1197:"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿJ$af0cced5-c91b-4ecb-bef8-ffacab1ef4af
+f	java:S106="+Replace this use of System.out by a logger.(µ—å¾J$42f787e1-d661-4200-9b1f-96eea9898cb4
+k	java:S106>"+Replace this use of System.out by a logger.(Û‹ö™ùÿÿÿÿJ$60623d48-695d-4b83-b350-7cb13022a1ce
+v
+java:S2209?"5Change this instance-reference to a static reference.(±İŠóıÿÿÿÿJ$14ad2c19-92a6-43f4-bca1-64953458e73a
+q
+java:S2209@"5Change this instance-reference to a static reference.(ÓÍ…ƒJ$8f366802-114e-45d1-b0b6-f78e5f46dd6e
+q
+java:S2209A"5Change this instance-reference to a static reference.(ªøäêJ$7f567942-dc1f-435d-bcc9-7f60d26572c4
+q
+java:S2209B"5Change this instance-reference to a static reference.(Õ¶à®J$fb1f11cb-aed9-4df3-b0b4-b896d478dc89
+q
+java:S2209C"5Change this instance-reference to a static reference.(™ ìóJ$783887b4-dd0d-4846-a83f-98b2ea689be5
+v
+java:S2209D"5Change this instance-reference to a static reference.(ûŸ„¤şÿÿÿÿJ$0620bcec-7320-46f9-adba-6b3067df5c09
+q
+java:S2209E"5Change this instance-reference to a static reference.(†Âœ©J$d2b10d78-f298-4dcf-817f-d444d9433d13
+f	java:S106F"+Replace this use of System.out by a logger.(ÒÓƒJ$5004a911-a579-4aae-ae79-8eb725e8463f
+~	java:S125G"<This block of commented-out lines of code should be removed.(ìöÕ8š‡‡Êì1J$672a5e96-fc9b-4fa0-9f75-d2f55282a62c

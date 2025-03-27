@@ -1,5 +1,6 @@
 package com.aiokleo.graph.breathfirstsearch;
 
+
 import com.aiokleo.graph.Graphs;
 
 import java.util.*;
@@ -12,9 +13,16 @@ public class HasPath {
         if (visited.contains(src)) return false;// it is visited before there no reason to visit it again
         visited.add(src);
         if (src == dest) return true; // I also can print the path here
+//        graph.put('f', Arrays.asList('g', 'i'));
+//        graph.put('g', Collections.singletonList('h'));
+//        graph.put('i', Arrays.asList('g', 'k'));
+//        graph.put('h', Collections.emptyList());
+//        graph.put('j', Collections.singletonList('i'));
+//        graph.put('k', Collections.emptyList());
 
         for (T neighbor : graph.get(src)) {
             if (hasPathRecursive(graph, neighbor, dest, visited)) {
+                System.out.println("Source :" + src + " " + "Destination: " + dest);
                 return true;
             }
         }
@@ -49,7 +57,9 @@ public class HasPath {
         graph.put('k', Collections.emptyList());
 
         Graphs.printGraph(graph);
-        System.out.println(hasPathDFS(graph, 'f', 'k'));
+        System.out.println(hasPathDFS(graph, 'f', 'h'));
+        Set<Character> visited = new HashSet<>();
+        System.out.println(hasPathRecursive(graph, 'f', 'k', visited));
 
     }
 }

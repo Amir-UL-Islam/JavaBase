@@ -1,0 +1,7 @@
+
+Qpython:S3516"9Refactor this method to not always return the same value.(òè·í
+dpython:S117"MRename this parameter "T" to match the regular expression ^[_a-z][a-z0-9_]*$.(òè·í
+dpython:S117"MRename this parameter "W" to match the regular expression ^[_a-z][a-z0-9_]*$.(òè·í
+opython:S117	"XRename this local variable "textLen" to match the regular expression ^[_a-z][a-z0-9_]*$.(§ŒÛÉ
+tpython:S117"XRename this local variable "wordLen" to match the regular expression ^[_a-z][a-z0-9_]*$.(½á¢âþÿÿÿÿ
+ipython:S1542"QRename function "bruteSearch" to match the regular expression ^[a-z_][a-z0-9_]*$.(òè·í

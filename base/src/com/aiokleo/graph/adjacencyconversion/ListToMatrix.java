@@ -1,5 +1,6 @@
 package com.aiokleo.graph.adjacencyconversion;
 
+import com.aiokleo.genetics.Generics;
 import com.aiokleo.graph.breathfirstsearch.HasPath;
 import com.aiokleo.graph.connectedcomponent.IsConnectedComponentCount;
 
@@ -29,6 +30,7 @@ public class ListToMatrix {
         }
 
         Map<Character, List<Character>> graph = toAdjacencyList(matrix);
+//        Map<Character, List<Character>> graph2 = toAdjacencyListCommon(matrix);
         System.out.println("Matrix \n" + Arrays.deepToString(matrix));
         System.out.println(graph);
         Set<Character> visited = new HashSet<>();

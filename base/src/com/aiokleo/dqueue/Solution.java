@@ -6,13 +6,13 @@ public class Solution {
         int nNumbers = scan.nextInt();
         int nNumberCombination = scan.nextInt();
         Set<Integer> set = new HashSet<>();
-        Deque deque = new ArrayDeque<>();
+        Deque<Object> deque = new ArrayDeque<>();
 
         int maxNumberOfUnique = 0;
         for (int i = 0; i < nNumbers; i++) {
-            int Numbers = scan.nextInt();
-            deque.add(Numbers);
-            set.add(Numbers); // Only Unique Entity will be Added in the Set
+            int number = scan.nextInt();
+            deque.add(number);
+            set.add(number); // Only Unique Entity will be Added in the Set
             if(deque.size() == nNumberCombination){
                 if(set.size() > maxNumberOfUnique)
                     maxNumberOfUnique = set.size(); // Assigning New Maximum Unique Number

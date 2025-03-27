@@ -1,0 +1,14 @@
+
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›ŒŸìøÿÿÿÿ8¤¤èë1
+7
+java:S1220""Move this file to a named package.8¦¤èë1
+]
+java:S1854"@Remove this useless assignment to local variable "integersList".(üíÍô8¯¤èë1
+X	java:S125	"<This block of commented-out lines of code should be removed.(×ƒÊÏ8°¤èë1
+L	java:S106"+Replace this use of System.out by a logger.(ƒìîüıÿÿÿÿ8²¤èë1
+]	java:S125"<This block of commented-out lines of code should be removed.(Ğ´°øÿÿÿÿ8²¤èë1
+L	java:S106"+Replace this use of System.out by a logger.(ô¤ş«úÿÿÿÿ8³¤èë1
+L	java:S106"+Replace this use of System.out by a logger.(ÌÅùÿÿÿÿ8´¤èë1
+L	java:S106"+Replace this use of System.out by a logger.( ß‚©úÿÿÿÿ8´¤èë1
+N
+java:S1481"1Remove this unused "integersList" local variable.(üíÍô8·¤èë1

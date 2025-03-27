@@ -1,0 +1,10 @@
+
+m
+java:S1153"1Directly append the argument of String.valueOf().(û¿‰ÔJ$9d99c210-a568-408d-b0b3-e8bcb924391a
+m
+java:S1153"1Directly append the argument of String.valueOf().(û¿‰ÔJ$fc610f5d-1538-4bde-9989-7c49283ac276
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ýûÑÖ8ºãŒóì1
+s
+java:S2589"7Remove this expression which always evaluates to "true"(Þ—ÙßJ$84078d81-c642-42e1-a9c8-df3bfab106b5
+f	java:S106
+"+Replace this use of System.out by a logger.(ÕÊ°ŠJ$1e7d7f42-4cc7-4405-8d39-fd742c976fca

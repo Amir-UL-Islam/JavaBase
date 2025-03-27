@@ -1,0 +1,26 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(„é‰Šÿÿÿÿÿ8åüÞŽë1J$168028d2-3bb3-431d-9da2-9c357e19319f
+|	java:S125	"<This block of commented-out lines of code should be removed.(œºï´øÿÿÿÿJ$062beca2-ee6a-442f-a28d-4f02759d0025
+Œ
+java:S1149E"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ã¦ÒŽJ$06e005fa-917e-4726-a5b3-6fed7eef267f
+_
+java:S1659"#Declare "right" on a separate line.(çùà¶J$d9a26b2c-4232-441e-ad00-3f36babf9299
+\
+java:S3010"!Remove this assignment of "root".(¿º¼VJ$ddc18237-75da-499c-99d0-2ce314be00f6
+b
+java:S3010""!Remove this assignment of "root".(ûªÙÐøÿÿÿÿJ$119ff05e-1075-4c0a-a9cf-6d543c3923c5
+k	java:S106)"+Replace this use of System.out by a logger.(˜›ØÑùÿÿÿÿJ$3238e3e9-99ec-4043-b7fe-1df7367b393a
+k	java:S1063"+Replace this use of System.out by a logger.(˜›ØÑùÿÿÿÿJ$3f5992c6-675f-422d-93f8-13a52226726f
+k	java:S106:"+Replace this use of System.out by a logger.(˜›ØÑùÿÿÿÿJ$0a8288c6-af39-4e22-b91c-df9be7837b9c
+h
+java:S1905J"'Remove this unnecessary cast to "Node".(ÖëÇ¥ýÿÿÿÿJ$80fc0eaf-9710-4377-abb5-d3a69df9b75f
+b
+java:S1905_"'Remove this unnecessary cast to "Node".(€½ÄuJ$7e59efa8-da99-4666-bb2f-51baab402c99
+t
+java:S1854k"8Remove this useless assignment to local variable "tree".(ð™ÿ­J$292c5ed3-0eac-4d0e-8014-bd0cbbefd642
+e
+java:S1481k")Remove this unused "tree" local variable.(ð™ÿ­J$2ba22b2a-1f90-460f-9ad3-f66ceb2c82d0
+w	java:S125r"<This block of commented-out lines of code should be removed.(ëÅÎóJ$fcc9e378-e93a-439f-bc39-8251427945df
+w	java:S125|"<This block of commented-out lines of code should be removed.(ùÀºJ$c714ff1a-3d7c-4919-882a-63663f4ccc8f
+x
+java:S1128"7Remove this unused import 'java.util.stream.Collector'.(ß‹ÎÓøÿÿÿÿJ$4c7467fa-5821-42b7-b8ac-8edb4d133ba9

@@ -1,0 +1,16 @@
+
+“	java:S117%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê‡·¦8®‡Ïòì1J$13bbf88f-9a63-4380-a8bc-6d8c956207af
+“	java:S1170"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åö¯ó8¯‡Ïòì1J$0c1fda38-5e24-4bf1-9407-80e682d017a7
+‡
+java:S2184)"ECast one of the operands of this subtraction operation to a "double".(¢åÁ>8´‡Ïòì1J$580058ca-a651-4e46-a144-03a11a3b0375
+ˆ
+java:S2184*"ECast one of the operands of this subtraction operation to a "double".(Í·××8´‡Ïòì1J$3764b575-1420-44cd-a35d-ed99f461dad4
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(„é‰Šÿÿÿÿÿ8¸‡Ïòì1J$00f7764a-8c8c-4b8f-b07d-739d19b6357b
+f
+java:S1659"#Declare "right" on a separate line.(çùà¶8ÈˆÏòì1J$c75956ad-57bd-4c7b-8bde-4a523bba7c78
+	java:S100-"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û–à8àˆÏòì1J$0bc33e74-20d5-422a-afaf-c3af87070480
+m	java:S1065"+Replace this use of System.out by a logger.(×•œ²8çˆÏòì1J$cf9006de-d236-4bbb-987c-3f6c5dbf28ff
+l	java:S1067"+Replace this use of System.out by a logger.(Úç\8èˆÏòì1J$36d72761-0a6c-44c9-9f60-b202cf81dc7f
+r	java:S1069"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8éˆÏòì1J$03594f5d-606f-4fa0-8153-99d9a58cf333
+i
+java:S1128"&Remove this unused import 'java.util'.(Î€ŒÙ8†°Ğòì1J$278801c4-866d-447b-ad13-67fe7196d0f7

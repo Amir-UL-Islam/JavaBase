@@ -21,6 +21,7 @@ public class BreathFirst {
         graph.put('f', Collections.singletonList('d'));
 
         BreathFirst.BreathFirstSearch bfs = new BreathFirst.BreathFirstSearch();
+        Graphs.printGraph(graph);
         Character source = 'a';
         Queue<Character> result = bfs.bfs(graph, source);
         System.out.println("result = " + result);

@@ -1,0 +1,7 @@
+
+š
+java:S2142
+"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€J$6ae013fc-53e6-4944-9e75-c3652869d0a6
+|
+java:S1612"@Replace this lambda with method reference 'System.out::println'.(•‰±”J$b6a11167-ea17-4058-88da-54bb8aaa907d
+f	java:S106"+Replace this use of System.out by a logger.(•‰±”J$0f5c1c49-ecaa-4520-8896-9c8d36d07db8
