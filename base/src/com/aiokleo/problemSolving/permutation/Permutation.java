@@ -1,3 +1,5 @@
+package com.aiokleo.problemSolving.permutation;
+
 public class Permutation {
     static void permutation(String str) {
         permutation(str, "");
