@@ -1,5 +1,4 @@
-package throwNewException;
-import java.io.*;
+package com.aiokleo.tryCatch.throwNewException;
 import java.util.*;
 import java.util.StringTokenizer;
 class MyCalculate{

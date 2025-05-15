@@ -1,3 +1,5 @@
+package com.aiokleo.problemSolving.hasDuplicates;
+
 import java.util.Arrays;
 import java.util.HashSet;
 

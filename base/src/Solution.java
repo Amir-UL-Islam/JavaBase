@@ -1,10 +1,8 @@
-package com.aiokleo.problemSolving.rotateArray;
-
 public class Solution {
     public static void main(String[] args) {
         int[] nums = new int[] { 1, 2, 3, 4, 5, 6, 7 };
         int k = 3;
-        Solution.rotate(nums, k);
+        Solution.rotateI(nums, k);
         for (int i : nums) {
             System.out.println(i);
         }
@@ -22,7 +20,7 @@ public class Solution {
         }
     }
 
-    public static void rotateII(int[] nums, int k) {
+    public static void rotateI(int[] nums, int k) {
         int n = nums.length;
         k = k % n;
 
@@ -43,7 +41,7 @@ public class Solution {
 
     }
 
-    public void rotateI(int[] nums, int k) {
+    public void rotateII(int[] nums, int k) {
         int n = nums.length;
         k %= n;
         reverse(nums, 0, n - 1);
@@ -60,5 +58,4 @@ public class Solution {
             end--;
         }
     }
-
 }
