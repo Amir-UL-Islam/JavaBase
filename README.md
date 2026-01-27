@@ -28,7 +28,7 @@ javac src/com/aiokleo/problemSolving/twoSum/TwoSum.java
 Run it (adjust the classpath and main class as needed):
 
 ```bash
-java -cp src com.aiokleo.problemSolving.twoSum.TwoSum
+java -cp src io.topic.problemSolving.twoSum.TwoSum
 ```
 
 

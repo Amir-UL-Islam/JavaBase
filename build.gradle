@@ -4,7 +4,7 @@ plugins {
     id 'org.jetbrains.kotlin.jvm' version '2.1.10'
 }
 
-group = 'com.aiokleo'
+group = 'io.topic'
 version = '1.0-SNAPSHOT'
 
 repositories {
@@ -22,6 +22,44 @@ dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(23)
+    }
+}
+
+kotlin {
+    jvmToolchain(23)
+}
+
+tasks.register('runSingle', JavaExec) {
+    def mainClassProp = project.findProperty('mainClass')?.toString()
+    if (!mainClassProp) {
+        throw new GradleException("Missing -PmainClass=... (e.g. ./gradlew runSingle -PmainClass=io.topic.App)")
+    }
+    mainClass = mainClassProp
+    classpath = sourceSets.main.runtimeClasspath
+    javaLauncher = javaToolchains.launcherFor {
+        languageVersion = JavaLanguageVersion.of(23)
+    }
+}
+
+tasks.register('runJavaFile', Exec) {
+    def javaFileProp = project.findProperty('javaFile')?.toString()
+    if (!javaFileProp) {
+        throw new GradleException("Missing -PjavaFile=... (e.g. ./gradlew runJavaFile -PjavaFile=src/main/java/io/topic/App.java)")
+    }
+    def javaLauncher = javaToolchains.launcherFor {
+        languageVersion = JavaLanguageVersion.of(23)
+    }
+    executable = javaLauncher.get().executablePath.asFile.absolutePath
+    args = ['-classpath', sourceSets.main.runtimeClasspath.asPath, javaFileProp]
 }
 
 test {
