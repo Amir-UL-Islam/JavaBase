@@ -1,10 +1,10 @@
-//package io.topic.singleton;
+package io.topic.singleton;
 // SingleTon mean allowing A CLASS to CREATE 1 INSTANCE
 
 public class Singleton {
     public static void main(String[] args) {
-        SingletonClass abcOne = SingletonClass.getInstance();
-        abcOne.showMessage();
+        SingletonClass anInstance = SingletonClass.getInstance();
+        anInstance.showMessage();
         // I can't do
         // ```
         // ABC abcTwo = new ABC();
@@ -12,9 +12,9 @@ public class Singleton {
         // BECAUSE ABC is a Private
         // SO I have to go with this
 
-        SingletonClass abcTwo = SingletonClass.getInstance();
-        abcTwo.showMessage();
-        // Which will return same Instance
+        SingletonClass anotherInstance = SingletonClass.getInstance();
+        anotherInstance.showMessage();
+        // Which will return the same Instance
     }
 }
 
@@ -28,18 +28,20 @@ class SingletonClass {
 
     private SingletonClass() {
 
-        // Adding validation so that no Replaction can not create another instance of it
+        // Adding validation so that no Replication cannot create another instance of it
         //
         if (instance != null) {
             throw new IllegalAccessError("Already an instance exist.");
         }
-    };
+    }
+
+    ;
 
     // 3rd STEP
     public static SingletonClass getInstance() {
-        System.out.println("Only 1 Instance");
+        System.out.println("Only 1 Instance is allowed");
 
-        // Applying Thread Safty
+        // Applying Thread Safety
         if (instance == null) {
             synchronized (SingletonClass.class) {
 
