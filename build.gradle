@@ -35,12 +35,12 @@ dependencies {
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(23)
+        languageVersion = JavaLanguageVersion.of(17)
     }
 }
 
 kotlin {
-    jvmToolchain(23)
+    jvmToolchain(17)
 }
 
 tasks.register('runSingle', JavaExec) {
@@ -51,7 +51,7 @@ tasks.register('runSingle', JavaExec) {
     mainClass = mainClassProp
     classpath = sourceSets.main.runtimeClasspath
     javaLauncher = javaToolchains.launcherFor {
-        languageVersion = JavaLanguageVersion.of(23)
+        languageVersion = JavaLanguageVersion.of(17)
     }
 }
 
@@ -61,7 +61,7 @@ tasks.register('runJavaFile', Exec) {
         throw new GradleException("Missing -PjavaFile=... (e.g. ./gradlew runJavaFile -PjavaFile=src/main/java/io/topic/App.java)")
     }
     def javaLauncher = javaToolchains.launcherFor {
-        languageVersion = JavaLanguageVersion.of(23)
+        languageVersion = JavaLanguageVersion.of(17)
     }
     executable = javaLauncher.get().executablePath.asFile.absolutePath
     args = ['-classpath', sourceSets.main.runtimeClasspath.asPath, javaFileProp]
